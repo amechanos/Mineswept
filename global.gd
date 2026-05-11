@@ -9,3 +9,4 @@ const ATTACKS: int = 6
 
 var health: int = 8
 var attacksFound: int = 0
+var time: float = 0

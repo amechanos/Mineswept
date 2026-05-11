@@ -3,9 +3,14 @@ extends Node2D
 @onready var tilemap = $TileMapLayer
 @onready var Player = $player
 @onready var HP = $Health/Value
+@onready var stopwatch = $Stopwatch/Value
+@onready var counter = $Bombs/Value
+
+const FADE_DURATION = Global.WIDTH * 1.25
 
 var revealed_tiles = {}
 var flagged_tiles = {}
+var stepped_tiles = {} 
 
 const TILE = {
 	"BLANK": Vector2i(0,0),
@@ -69,11 +74,13 @@ func _on_player_revealed(tile: Vector2) -> void:
 		return
 	
 	revealed_tiles[tile_i] = true
+	
 	var cell_value = Global.grid[tile_i.x][tile_i.y]
 	
 	if cell_value == 1:  # player attack
 		tilemap.set_cell(tile_i, 0, TILE["CORRECT"])
 		Global.attacksFound += 1
+		counter.text = str(Global.attacksFound) + "/" + str(Global.ATTACKS)
 		if Global.attacksFound >= Global.ATTACKS:
 			win()
 	else:  # enemy attack
@@ -86,17 +93,20 @@ func _on_player_revealed(tile: Vector2) -> void:
 	HP.text = str(Global.health)
 
 func win() -> void:
-	print("You win!")
+	print("You win! Time taken: ", stopwatch.text)
 	get_tree().paused = true
 
 func lose() -> void:
-	print("You lose!")
+	print("You lose! Time taken: ", stopwatch.text)
 	get_tree().paused = true
 
 func _on_player_stepped(tile: Vector2) -> void:
 	var tile_i = Vector2i(tile)
 	if tile_i in revealed_tiles or tile_i in flagged_tiles:
 		return
+		
+	stepped_tiles[tile_i] = FADE_DURATION
+		
 	get_nearby_bombs(Global.grid, tile_i)
 
 func _on_player_flagged(tile: Vector2) -> void:
@@ -111,8 +121,23 @@ func _on_player_flagged(tile: Vector2) -> void:
 	else:
 		flagged_tiles[tile_i] = true
 		tilemap.set_cell(tile_i, 0, TILE["FLAG"])
+
+func _process(delta: float) -> void:
+	Global.time += delta
+	stopwatch.text = "%.2f" % Global.time
+	
+	for tile in stepped_tiles.keys():
+		stepped_tiles[tile] -= delta
 		
+		if stepped_tiles[tile] <= 0 and tile not in revealed_tiles and tile not in flagged_tiles:
+			stepped_tiles.erase(tile)
+			tilemap.set_cell(tile, 0, TILE["BLANK"])
+			
 func _ready() -> void:
+	Global.time = 0
+	
 	Global.grid = create_board(Global.WIDTH, Global.HEIGHT, Global.ATTACKS)
 	Player.global_position = Vector2(Player.STEP/2, Player.STEP/2)
 	HP.text = str(Global.health)
+	counter.text = str(Global.attacksFound) + "/" + str(Global.ATTACKS)
+	stopwatch.text = "0"

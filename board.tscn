@@ -837,6 +837,40 @@ offset_bottom = 64.0
 theme_override_font_sizes/font_size = 36
 vertical_alignment = 1
 
+[node name="Stopwatch" type="Label" parent="." unique_id=1510389903]
+offset_left = 384.0
+offset_top = 640.0
+offset_right = 688.0
+offset_bottom = 704.0
+theme_override_font_sizes/font_size = 36
+text = "Time:"
+vertical_alignment = 1
+
+[node name="Value" type="Label" parent="Stopwatch" unique_id=486148637]
+layout_mode = 0
+offset_left = 152.0
+offset_right = 304.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 36
+vertical_alignment = 1
+
+[node name="Bombs" type="Label" parent="." unique_id=1709207756]
+offset_left = 768.0
+offset_top = 640.0
+offset_right = 1264.0
+offset_bottom = 704.0
+theme_override_font_sizes/font_size = 36
+text = "Fragments Found:"
+vertical_alignment = 1
+
+[node name="Value" type="Label" parent="Bombs" unique_id=235715844]
+layout_mode = 0
+offset_left = 320.0
+offset_right = 448.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 36
+vertical_alignment = 1
+
 [connection signal="flagged" from="player" to="." method="_on_player_flagged"]
 [connection signal="revealed" from="player" to="." method="_on_player_revealed"]
 [connection signal="stepped" from="player" to="." method="_on_player_stepped"]
