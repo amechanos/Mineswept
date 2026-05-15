@@ -1,12 +1,15 @@
 extends Node
 
-const WIDTH: int = 6
-const HEIGHT: int = 6
-
+# Minesweeper Mode 
 var grid: Array = []
 
-const ATTACKS: int = 6
+var health: int = 10
 
-var health: int = 8
-var attacksFound: int = 0
-var time: float = 0
+# Jigsaw Mode
+const max_pieces = 8
+const min_pieces = 8
+
+var shardLibrary: Dictionary = {}
+
+func _ready():
+	Loader.load_shard_library()

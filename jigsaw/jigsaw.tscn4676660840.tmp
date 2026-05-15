@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://yvuaxtsuwixg"]
+
+[ext_resource type="Script" uid="uid://cpcx77qbeeao1" path="res://jigsaw/jigsaw.gd" id="1_as8wo"]
+
+[node name="Jigsaw" type="Node2D" unique_id=804192867]
+script = ExtResource("1_as8wo")

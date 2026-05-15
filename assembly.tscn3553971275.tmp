@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dxc3vtny2rnm4"]
+
+[ext_resource type="Script" uid="uid://dk6j2wqqwbn3k" path="res://assembly.gd" id="1_vhoeo"]
+[ext_resource type="Resource" uid="uid://yl0m7n0aw2px" path="res://tarot/tarot_card.tres" id="2_tk35r"]
+[ext_resource type="Texture2D" uid="uid://dy3vtympwxmx7" path="res://tarot/cards/Death.png" id="3_elksu"]
+
+[node name="Node2D" type="Node2D" unique_id=1565405256]
+script = ExtResource("1_vhoeo")
+test_card = ExtResource("2_tk35r")
+test_texture = ExtResource("3_elksu")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2128213398]
+offset = Vector2(640, 360)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=471210243]
+
+[node name="Label" type="Label" parent="." unique_id=1377570198]
+offset_right = 192.0
+offset_bottom = 64.0
