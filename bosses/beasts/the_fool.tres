@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BeastData" format=3 uid="uid://bvc3u3dxyu1uv"]
+
+[ext_resource type="Script" uid="uid://ber78np4oh0ub" path="res://bosses/scripts/beast.gd" id="2_mm0ry"]
+
+[resource]
+script = ExtResource("2_mm0ry")
+id = "the_fool"
+riddle_texts = Array[String](["I am the empty zero, a blind leap of faith with nothing to lose.", "The sand molds yet I am none, just a mirage.", "I walk without knowing. I fall without fear. Every ending becomes my first step.", "I change, day by day, shifting to whatever I please.", "Where there is a Clown, there must be a Jester."])
+correct_card = "the_fool"
+upright_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, the statue shatters. Their existence from Teranilus fades into silence and disappears forever."
+reversed_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, a loud roar erupts, the statue no longer stone but a proper beast. Their dominion over Teranilus is now sealed, granting them freedom from their stone form."
+rejection_hint = "It doesn't react. It appears what you hold doesn't do anything."

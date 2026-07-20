@@ -1,0 +1,149 @@
+[gd_scene format=4 uid="uid://bhknyrt3wy50f"]
+
+[ext_resource type="Script" uid="uid://jcghouc21os3" path="res://minesweeper/scripts/board.gd" id="1_cfg65"]
+[ext_resource type="PackedScene" uid="uid://d1u30cjg1s1um" path="res://map/minimap.tscn" id="2_ggj68"]
+[ext_resource type="Texture2D" uid="uid://cjg6qiw5qlyp0" path="res://minesweeper/assets/Tilemap.png" id="2_nnt0t"]
+[ext_resource type="PackedScene" uid="uid://3ndtme5qmak1" path="res://minesweeper/player.tscn" id="3_nnt0t"]
+[ext_resource type="PackedScene" uid="uid://buukwwix7pkyh" path="res://basic_npc.tscn" id="4_nnt0t"]
+[ext_resource type="Texture2D" uid="uid://ckeqs1spr2b0k" path="res://minesweeper/assets/great wizard.png" id="5_nnt0t"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8l818"]
+texture = ExtResource("2_nnt0t")
+texture_region_size = Vector2i(75, 75)
+0:0/0 = 0
+1:0/next_alternative_id = 2
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_jqgjh"]
+tile_size = Vector2i(75, 75)
+sources/0 = SubResource("TileSetAtlasSource_8l818")
+
+[node name="board" type="Node2D" unique_id=1759626321]
+script = ExtResource("1_cfg65")
+
+[node name="Camera" type="Camera2D" parent="." unique_id=2140221496]
+
+[node name="UI" type="CanvasLayer" parent="Camera" unique_id=785190752]
+
+[node name="minimap" parent="Camera/UI" unique_id=1276943715 instance=ExtResource("2_ggj68")]
+
+[node name="Health" type="Label" parent="Camera/UI" unique_id=285953966]
+offset_left = 16.0
+offset_top = 656.0
+offset_right = 320.0
+offset_bottom = 720.0
+theme_override_font_sizes/font_size = 36
+text = "Health:"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Value" type="Label" parent="Camera/UI/Health" unique_id=682214016]
+layout_mode = 0
+offset_left = 152.0
+offset_right = 304.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 36
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Shards" type="Label" parent="Camera/UI" unique_id=1709207756]
+offset_left = 320.0
+offset_top = 656.0
+offset_right = 768.0
+offset_bottom = 720.0
+theme_override_font_sizes/font_size = 36
+text = "Shards remaining:"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Value" type="Label" parent="Camera/UI/Shards" unique_id=235715844]
+layout_mode = 0
+offset_left = 352.0
+offset_right = 480.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 36
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="found" type="Label" parent="Camera/UI" unique_id=1124560264]
+offset_left = 960.0
+offset_top = 128.0
+offset_right = 1280.0
+offset_bottom = 552.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="Camera/UI" unique_id=2063193267]
+offset_left = 1024.0
+offset_top = 640.0
+offset_right = 1216.0
+offset_bottom = 704.0
+text = "Open Tarot Bag"
+
+[node name="Info" type="Panel" parent="Camera/UI" unique_id=1991327605]
+offset_left = 992.0
+offset_top = 128.0
+offset_right = 1248.0
+offset_bottom = 576.0
+
+[node name="texture" type="TextureRect" parent="Camera/UI/Info" unique_id=1729742643]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 240.0
+offset_bottom = 208.0
+expand_mode = 2
+stretch_mode = 5
+
+[node name="name" type="Label" parent="Camera/UI/Info" unique_id=238702535]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 232.0
+offset_right = 240.0
+offset_bottom = 304.0
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="other" type="Label" parent="Camera/UI/Info" unique_id=1886186221]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 320.0
+offset_right = 240.0
+offset_bottom = 376.0
+text = "Press Q to Interact!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=397242804]
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAFAAEAAAAAAAAAAAAEAAEAAAAAAAAAAAADAAEAAAAAAAAAAAACAAEAAAAAAAAAAAABAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAMAAAAAAAAAAAABAAMAAAAAAAAAAAACAAMAAAAAAAAAAAADAAMAAAAAAAAAAAADAAIAAAAAAAAAAAAEAAIAAAAAAAAAAAAFAAIAAAAAAAAAAAAFAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAACAAIAAAAAAAAAAAABAAIAAAAAAAAAAAAAAAIAAAAAAAAAAAAFAAQAAAAAAAAAAAAEAAQAAAAAAAAAAAADAAQAAAAAAAAAAAACAAQAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAADAAUAAAAAAAAAAAAEAAUAAAAAAAAAAAAFAAUAAAAAAAAAAAACAAUAAAAAAAAAAAABAAUAAAAAAAAAAAAAAAUAAAAAAAAAAAAHAAQAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_jqgjh")
+
+[node name="player" parent="." unique_id=1186664178 instance=ExtResource("3_nnt0t")]
+
+[node name="Npcs" type="Node2D" parent="." unique_id=1063679459]
+
+[node name="basicNPC" parent="Npcs" unique_id=661200584 instance=ExtResource("4_nnt0t")]
+texture = ExtResource("5_nnt0t")
+title = "The Great Wizard"
+dialogue = Array[String](["Holy Shi!", "Who might you be?", "Amos Relle?"])
+grid_pos = Vector2i(5, 6)
+
+[connection signal="pressed" from="Camera/UI/Button" to="." method="_on_button_pressed"]
+[connection signal="clicked" from="player" to="." method="_on_player_clicked"]
+[connection signal="flagged" from="player" to="." method="_on_player_flagged"]
+[connection signal="interacted" from="player" to="." method="_on_player_interacted"]
+[connection signal="moved" from="player" to="." method="_on_player_moved"]
+[connection signal="stepped" from="player" to="." method="_on_player_stepped"]

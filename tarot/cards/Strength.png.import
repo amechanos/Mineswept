@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxeat6752lrk6"
-path="res://.godot/imported/Strength.png-f99929ec3a1dd0d90ed2ec17801f8fa6.ctex"
+uid="uid://mc6nayo641as"
+path="res://.godot/imported/strength.png-c0d345ca5e39dd647a4c2cb12c723bbd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tarot/cards/Strength.png"
-dest_files=["res://.godot/imported/Strength.png-f99929ec3a1dd0d90ed2ec17801f8fa6.ctex"]
+source_file="res://tarot/cards/strength.png"
+dest_files=["res://.godot/imported/strength.png-c0d345ca5e39dd647a4c2cb12c723bbd.ctex"]
 
 [params]
 

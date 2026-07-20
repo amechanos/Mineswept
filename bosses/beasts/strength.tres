@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BeastData" format=3 uid="uid://bbftqacsw2o0a"]
+
+[ext_resource type="Script" uid="uid://ber78np4oh0ub" path="res://bosses/scripts/beast.gd" id="2_kk0mg"]
+
+[resource]
+script = ExtResource("2_kk0mg")
+id = "strength"
+riddle_texts = Array[String](["Try breaking an unbreakable wall. What does kicking it feel like?", "A man and an ape walk into a bar. All the man can do is look in jealousy.", "The mountain is mighty. Yet I conquer.", "I tame the beast with a hand, not a blade; I bend bars without rage.", "My roar is silence — my power is restraint."])
+correct_card = "strength"
+upright_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, the statue shatters. Their existence from Teranilus fades into silence and disappears forever."
+reversed_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, a loud roar erupts, the statue no longer stone but a proper beast. Their dominion over Teranilus is now sealed, granting them freedom from their stone form."
+rejection_hint = "It doesn't react. It appears what you hold doesn't do anything."

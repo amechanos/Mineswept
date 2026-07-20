@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dy3vtympwxmx7"
-path="res://.godot/imported/Death.png-882999632f63680c46a0c9e7676cfbf2.ctex"
+path="res://.godot/imported/death.png-059302068060807d022ecf02512c1717.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tarot/cards/Death.png"
-dest_files=["res://.godot/imported/Death.png-882999632f63680c46a0c9e7676cfbf2.ctex"]
+source_file="res://tarot/cards/death.png"
+dest_files=["res://.godot/imported/death.png-059302068060807d022ecf02512c1717.ctex"]
 
 [params]
 

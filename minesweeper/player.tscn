@@ -1,18 +1,30 @@
 [gd_scene format=3 uid="uid://3ndtme5qmak1"]
 
 [ext_resource type="Script" uid="uid://bc6riv3ghoc34" path="res://minesweeper/scripts/player.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://4wctb648ak0j" path="res://minesweeper/assets/salem.png" id="2_lejfy"]
+[ext_resource type="Texture2D" uid="uid://dtm2g12j4mnla" path="res://minesweeper/assets/P_SOUTH.png" id="2_lejfy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4flbx"]
 radius = 16.0
 
 [node name="player" type="CharacterBody2D" unique_id=1186664178]
+z_index = 60
 script = ExtResource("1_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1526208621]
 shape = SubResource("CircleShape2D_4flbx")
 
-[node name="Basic" type="Sprite2D" parent="." unique_id=1195610741]
-position = Vector2(0, 1.9073486e-06)
-scale = Vector2(0.056563154, 0.056563158)
+[node name="Texture" type="TextureRect" parent="." unique_id=196937392]
+z_index = 60
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -87.00001
+offset_right = 920.0
+offset_bottom = 1383.506
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.08160455, 0.08160455)
 texture = ExtResource("2_lejfy")
+stretch_mode = 5

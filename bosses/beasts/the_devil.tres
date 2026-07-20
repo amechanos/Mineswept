@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BeastData" format=3 uid="uid://d2jvw5hms5jnh"]
+
+[ext_resource type="Script" uid="uid://ber78np4oh0ub" path="res://bosses/scripts/beast.gd" id="2_x35yc"]
+
+[resource]
+script = ExtResource("2_x35yc")
+id = "the_devil"
+riddle_texts = Array[String](["Accept my tempting buffs, and your growing corruption will enslave you.", "Give me 1 soul and I'll come to Earth. Give me 100 souls and I'll rule the world.", "An empty prison is no better than a full prison with stupid guards.", "Between two evils, I always pick the one I never tried before.", "My chains are velvet until you try to leave."])
+correct_card = "the_devil"
+upright_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, the statue shatters. Their existence from Teranilus fades into silence and disappears forever."
+reversed_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, a loud roar erupts, the statue no longer stone but a proper beast. Their dominion over Teranilus is now sealed, granting them freedom from their stone form."
+rejection_hint = "It doesn't react. It appears what you hold doesn't do anything."

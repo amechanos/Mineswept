@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BeastData" format=3 uid="uid://ddn1hmqi1qki0"]
+
+[ext_resource type="Script" uid="uid://ber78np4oh0ub" path="res://bosses/scripts/beast.gd" id="2_hn4do"]
+
+[resource]
+script = ExtResource("2_hn4do")
+id = "the_high_priestess"
+riddle_texts = Array[String](["The louder you fight, the thicker my silent, unseen walls become.", "Life finds a way... with or without knowledge.", "The loud pass by. The patient hears. The deaf learns to listen.", "Nature bends to my will.", "I speak in secrets with no voice; my answer lives behind your eyes."])
+correct_card = "the_high_priestess"
+upright_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, the statue shatters. Their existence from Teranilus fades into silence and disappears forever."
+reversed_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, a loud roar erupts, the statue no longer stone but a proper beast. Their dominion over Teranilus is now sealed, granting them freedom from their stone form."
+rejection_hint = "It doesn't react. It appears what you hold doesn't do anything."

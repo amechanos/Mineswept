@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm72ljsg14r45"
-path="res://.godot/imported/Temperance.png-b43495ae231ec60b351ff9f31d4f4d56.ctex"
+uid="uid://d1f51ufi7fu"
+path="res://.godot/imported/temperance.png-d6ab34ef4bae77238e2335630826eb27.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tarot/cards/Temperance.png"
-dest_files=["res://.godot/imported/Temperance.png-b43495ae231ec60b351ff9f31d4f4d56.ctex"]
+source_file="res://tarot/cards/temperance.png"
+dest_files=["res://.godot/imported/temperance.png-d6ab34ef4bae77238e2335630826eb27.ctex"]
 
 [params]
 

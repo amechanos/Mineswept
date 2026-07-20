@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://cj6kd3ddfhyxo"]
+
+[ext_resource type="Script" uid="uid://b8xf2skv70pre" path="res://npcs/scripts/npc.gd" id="1_cqejd"]
+[ext_resource type="Resource" uid="uid://7widhfo0mx3l" path="res://npcs/npc/wizard.tres" id="2_novm3"]
+[ext_resource type="FontFile" uid="uid://dvyk2goxxk460" path="res://ui/fonts/Silkscreen-Bold.ttf" id="3_mea8m"]
+[ext_resource type="Texture2D" uid="uid://dhq01bgrdismw" path="res://npcs/textures/wizard/EAST.png" id="3_novm3"]
+
+[node name="Npc" type="Control" unique_id=731403038]
+custom_minimum_size = Vector2(96, 198)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_cqejd")
+data = ExtResource("2_novm3")
+
+[node name="Panel" type="Panel" parent="." unique_id=1072055909]
+z_index = 1
+layout_mode = 0
+offset_left = 5.0
+offset_top = 198.0
+offset_right = 69.0
+offset_bottom = 262.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=1161580523]
+z_index = 3
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+theme_override_constants/paragraph_spacing = -3
+theme_override_fonts/font = ExtResource("3_mea8m")
+theme_override_font_sizes/font_size = 36
+text = "E"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2105446516]
+z_index = 10
+texture_filter = 1
+layout_mode = 0
+offset_top = -48.0
+offset_right = 96.0
+offset_bottom = 96.0
+texture = ExtResource("3_novm3")
+stretch_mode = 5

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BeastData" format=3 uid="uid://ot50olgf1hl4"]
+
+[ext_resource type="Script" uid="uid://ber78np4oh0ub" path="res://bosses/scripts/beast.gd" id="2_55224"]
+
+[resource]
+script = ExtResource("2_55224")
+id = "the_world"
+riddle_texts = Array[String](["If the world revolves around one, what gives?", "You know what I desire? The control of time.", "Every road reaches me. Every lesson belongs to me. I am it.", "By working faithfully eight hours a day you may eventually get to be boss and work twelve hours a day.", "I am the final circle: step in, and there is nowhere left to go."])
+correct_card = "the_world"
+upright_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, the statue shatters. Their existence from Teranilus fades into silence and disappears forever."
+reversed_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, a loud roar erupts, the statue no longer stone but a proper beast. Their dominion over Teranilus is now sealed, granting them freedom from their stone form."
+rejection_hint = "It doesn't react. It appears what you hold doesn't do anything."

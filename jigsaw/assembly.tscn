@@ -1,15 +1,20 @@
 [gd_scene format=3 uid="uid://tl7r7xh4ri6b"]
 
-[ext_resource type="Script" uid="uid://dk6j2wqqwbn3k" path="res://jigsaw/assembly.gd" id="1_w021k"]
-[ext_resource type="Texture2D" uid="uid://dy3vtympwxmx7" path="res://tarot/cards/Death.png" id="2_4x4xm"]
+[ext_resource type="Script" uid="uid://dk6j2wqqwbn3k" path="res://jigsaw/scripts/assembly.gd" id="1_w021k"]
 
 [node name="assembly" type="Node2D" unique_id=756084002]
 script = ExtResource("1_w021k")
-puzzle_texture = ExtResource("2_4x4xm")
-rows = 5
-cols = 3
 snap_distance = 10.0
 snap_angle_tolerance = 4.0
 scatter_margin = 200.0
 
 [node name="board" type="Node2D" parent="." unique_id=973290297]
+
+[node name="Button" type="Button" parent="." unique_id=896780923]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 256.0
+offset_bottom = 128.0
+text = "Return to Teranilus"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

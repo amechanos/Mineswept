@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpvwvie5rcmpi"
-path="res://.godot/imported/Justice.png-a4b188176e248de37648329a6bfbca9f.ctex"
+uid="uid://dfxw3u5hvei6a"
+path="res://.godot/imported/justice.png-cd346839dcdb277051507ee81ed74f0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tarot/cards/Justice.png"
-dest_files=["res://.godot/imported/Justice.png-a4b188176e248de37648329a6bfbca9f.ctex"]
+source_file="res://tarot/cards/justice.png"
+dest_files=["res://.godot/imported/justice.png-cd346839dcdb277051507ee81ed74f0e.ctex"]
 
 [params]
 

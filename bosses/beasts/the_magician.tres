@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BeastData" format=3 uid="uid://brwrmbyul6ymg"]
+
+[ext_resource type="Script" uid="uid://ber78np4oh0ub" path="res://bosses/scripts/beast.gd" id="2_ojwk8"]
+
+[resource]
+script = ExtResource("2_ojwk8")
+id = "the_magician"
+riddle_texts = Array[String](["I turn your own elements against you with a wave of my hand.", "Greatness breathes fire, perfection breathes life.", "Four symbols, four times. Heed my words, divine action!", "From nothing I pull a spark; from that spark I build a storm.", "Name the tool, name the trick — then watch the world obey."])
+correct_card = "the_magician"
+upright_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, the statue shatters. Their existence from Teranilus fades into silence and disappears forever."
+reversed_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, a loud roar erupts, the statue no longer stone but a proper beast. Their dominion over Teranilus is now sealed, granting them freedom from their stone form."
+rejection_hint = "It doesn't react. It appears what you hold doesn't do anything."

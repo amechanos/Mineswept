@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NpcData" format=3 uid="uid://7widhfo0mx3l"]
+
+[ext_resource type="Script" uid="uid://bbe2npxkft03w" path="res://npcs/scripts/base.gd" id="1_ehohd"]
+[ext_resource type="Texture2D" uid="uid://dhq01bgrdismw" path="res://npcs/textures/wizard/EAST.png" id="2_ehohd"]
+
+[resource]
+script = ExtResource("1_ehohd")
+id = "wizard"
+name = "Wizard"
+texture = ExtResource("2_ehohd")
+dialogue = Array[String](["It was foretold that the beasts would awaken again.", "Every 50 years, these beasts look for a chance to erupt from their statues.", "The ritual must be completed, otherwise the beasts will bring havoc upon our world."])

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BeastData" format=3 uid="uid://cs28qne3k7k68"]
+
+[ext_resource type="Script" uid="uid://ber78np4oh0ub" path="res://bosses/scripts/beast.gd" id="2_mth0x"]
+
+[resource]
+script = ExtResource("2_mth0x")
+id = "judgement"
+riddle_texts = Array[String](["I tally your past body count to determine the buffs I use against you.", "I hear and I forget. I see and I remember. I do and I understand.", "The past calls my name. I cannot ignore its voice.", "You never realize how boring your life is until someone asks what you like to do for fun.", "What's 9+10?"])
+correct_card = "judgement"
+upright_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, the statue shatters. Their existence from Teranilus fades into silence and disappears forever."
+reversed_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, a loud roar erupts, the statue no longer stone but a proper beast. Their dominion over Teranilus is now sealed, granting them freedom from their stone form."
+rejection_hint = "It doesn't react. It appears what you hold doesn't do anything."

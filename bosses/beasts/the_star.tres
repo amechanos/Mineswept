@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BeastData" format=3 uid="uid://1yw8uar1oe86"]
+
+[ext_resource type="Script" uid="uid://ber78np4oh0ub" path="res://bosses/scripts/beast.gd" id="2_d8duc"]
+
+[resource]
+script = ExtResource("2_d8duc")
+id = "the_star"
+riddle_texts = Array[String](["I blind you in total darkness, leaving only a single frail hope to protect.", "You know what's up? The sky.", "I hope sailors don't follow me. They are getting eerily close.", "In the black, I am a needle; in the heart, I am a thread.", "Follow me and you may live; grasp me and you may break."])
+correct_card = "the_star"
+upright_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, the statue shatters. Their existence from Teranilus fades into silence and disappears forever."
+reversed_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, a loud roar erupts, the statue no longer stone but a proper beast. Their dominion over Teranilus is now sealed, granting them freedom from their stone form."
+rejection_hint = "It doesn't react. It appears what you hold doesn't do anything."

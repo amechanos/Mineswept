@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b5picb363oyfh"]
+
+[ext_resource type="Script" uid="uid://xu12ixwn3wpe" path="res://map/scripts/minimap.gd" id="1_dunfe"]
+
+[node name="Minimap" type="CanvasLayer" unique_id=1369048952]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=864116510]
+offset_right = 256.0
+offset_bottom = 256.0
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="MarginContainer" unique_id=2050315050]
+layout_mode = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="MarginContainer/SubViewportContainer" unique_id=671699325]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(256, 256)
+render_target_update_mode = 4
+
+[node name="Minimap Renderer" type="Node2D" parent="MarginContainer/SubViewportContainer/SubViewport" unique_id=2126963275]
+script = ExtResource("1_dunfe")

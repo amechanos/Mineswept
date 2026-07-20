@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BeastData" format=3 uid="uid://b1dcdcb2i4rvv"]
+
+[ext_resource type="Script" uid="uid://ber78np4oh0ub" path="res://bosses/scripts/beast.gd" id="2_1tysr"]
+
+[resource]
+script = ExtResource("2_1tysr")
+id = "the_hierophant"
+riddle_texts = Array[String](["I bind your party to conformity; strike one, and all shall bleed.", "The trouble with the rat race is that even if you win, you're still a rat, and I'm the cat.", "Thousands walk before me. Thousands walk behind me.", "I teach one hymn, one step, one sin — then call it salvation.", "My lesson is a leash: kiss it, and it tightens."])
+correct_card = "the_hierophant"
+upright_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, the statue shatters. Their existence from Teranilus fades into silence and disappears forever."
+reversed_outcome = "It reacts to the card you are holding, cracks forming in the statue. Suddenly, a loud roar erupts, the statue no longer stone but a proper beast. Their dominion over Teranilus is now sealed, granting them freedom from their stone form."
+rejection_hint = "It doesn't react. It appears what you hold doesn't do anything."

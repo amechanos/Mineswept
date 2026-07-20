@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://6j3j4rnsexgx"]
+
+[ext_resource type="Script" uid="uid://dp62t6u23xttu" path="res://ui/card.gd" id="1_5giai"]
+[ext_resource type="FontFile" uid="uid://b1uuydo35ri02" path="res://ui/fonts/Silkscreen-Regular.ttf" id="3_ltaug"]
+[ext_resource type="FontFile" uid="uid://dvyk2goxxk460" path="res://ui/fonts/Silkscreen-Bold.ttf" id="4_rd5dq"]
+
+[node name="Card" type="Control" unique_id=1521482128]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1760.0
+offset_bottom = -824.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(80, 128)
+script = ExtResource("1_5giai")
+
+[node name="Texture" type="TextureRect" parent="." unique_id=1452019839]
+texture_filter = 1
+layout_mode = 0
+offset_left = -48.0
+offset_right = 208.0
+offset_bottom = 256.0
+pivot_offset = Vector2(128, 128)
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Panel" type="Panel" parent="." unique_id=439800029]
+z_index = 100
+layout_mode = 0
+offset_left = 192.0
+offset_right = 384.0
+offset_bottom = 256.0
+
+[node name="Tooltip" type="Label" parent="Panel" unique_id=399577437]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 128.0
+offset_right = 184.0
+offset_bottom = 240.0
+theme_override_fonts/font = ExtResource("3_ltaug")
+theme_override_font_sizes/font_size = 14
+text = "Right click to change orientation
+
+Left Click to submit card"
+autowrap_mode = 3
+
+[node name="Name" type="Label" parent="Panel" unique_id=1514581273]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 184.0
+offset_bottom = 104.0
+theme_override_fonts/font = ExtResource("4_rd5dq")
+theme_override_font_sizes/font_size = 20
+text = "THE STAR"
+autowrap_mode = 3
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

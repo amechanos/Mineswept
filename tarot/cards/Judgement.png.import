@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b36brs7s2hnfc"
-path="res://.godot/imported/Judgement.png-18f46f91c071bfee2b147a0aca301b49.ctex"
+uid="uid://b20eycecnktog"
+path="res://.godot/imported/judgement.png-4a81851ec0be32fdad1350637e14e3a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tarot/cards/Judgement.png"
-dest_files=["res://.godot/imported/Judgement.png-18f46f91c071bfee2b147a0aca301b49.ctex"]
+source_file="res://tarot/cards/judgement.png"
+dest_files=["res://.godot/imported/judgement.png-4a81851ec0be32fdad1350637e14e3a0.ctex"]
 
 [params]
 

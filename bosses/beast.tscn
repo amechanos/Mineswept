@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bki7qmwj774d1"]
+
+[ext_resource type="Script" uid="uid://dtxceanthcuoj" path="res://bosses/scripts/beast_scene.gd" id="1_pp6in"]
+[ext_resource type="Texture2D" uid="uid://c1fqrlm2uvbfl" path="res://bosses/textures/EAST.png" id="2_dttlf"]
+[ext_resource type="FontFile" uid="uid://dvyk2goxxk460" path="res://ui/fonts/Silkscreen-Bold.ttf" id="2_hgp4h"]
+
+[node name="Beast" type="Control" unique_id=661998944]
+custom_minimum_size = Vector2(96, 198)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_pp6in")
+
+[node name="Panel" type="Panel" parent="." unique_id=386480243]
+z_index = 1
+layout_mode = 0
+offset_left = 5.0
+offset_top = 198.0
+offset_right = 69.0
+offset_bottom = 262.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=738252622]
+z_index = 3
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+theme_override_constants/paragraph_spacing = -3
+theme_override_fonts/font = ExtResource("2_hgp4h")
+theme_override_font_sizes/font_size = 36
+text = "E"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1986120740]
+z_index = 10
+texture_filter = 1
+layout_mode = 0
+offset_top = -96.0
+offset_right = 96.0
+offset_bottom = 102.0
+texture = ExtResource("2_dttlf")
+stretch_mode = 5
